@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de prueba para miamor</title>
+    <title>olamor</title>
     <style>
         /* Estilo personalizado para el botón */
         #botonRosado {
@@ -13,16 +13,29 @@
             border: none;
             cursor: pointer;
         }
+
+        /* Estilo para el texto gigante */
+        #textoGigante {
+            font-size: 2em;
+            margin-top: 20px;
+        }
     </style>
     <script>
         function mostrarMensaje() {
-            alert("Hola amor melon Te tqm");
+            // Obtener el elemento de texto gigante
+            var textoGigante = document.getElementById("textoGigante");
+
+            // Modificar el contenido del texto gigante
+            textoGigante.innerHTML = "Hola mor te tqm";
         }
     </script>
 </head>
 <body>
-    <h1>Mensaje al Clic</h1>
+    <h1>Mensaje para miamor</h1>
     <!-- Botón con el estilo personalizado y evento onclick -->
     <button id="botonRosado" onclick="mostrarMensaje()">Haz clic aquí</button>
+
+    <!-- Elemento de texto gigante -->
+    <div id="textoGigante"></div>
 </body>
 </html>
